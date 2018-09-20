@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: cloud-erp-product
+  datasource:
+    url: jdbc:mysql://localhost:3306/erp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: erp
+    password: erp#123
+    type: com.alibaba.druid.pool.DruidDataSource
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    port: 6379
+    host: localhost
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 5000
+server:
+  port: 8081
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+swagger:
+  enable: true
