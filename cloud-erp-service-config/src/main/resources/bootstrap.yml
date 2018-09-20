@@ -5,13 +5,9 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/zhangjt007/cloud-erp
+          username: zhangjt007@gmail.com
+          password: Github.pwd=2.5
+          search-paths: config-repo
 server:
   port: 8763
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
