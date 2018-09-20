@@ -20,7 +20,7 @@
 地址：http://localhost:8761/
 
 ## cloud-erp-service-gateway
-> 服务网关模块
+> 配置中心模块
 
 地址：http://localhost:8763/
 
