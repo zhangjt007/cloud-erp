@@ -31,3 +31,6 @@ eureka:
 
 swagger:
   enable: true
+
+product:
+  sn: X821W01
