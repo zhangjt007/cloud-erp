@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: cloud-erp-product
   datasource:
     url: jdbc:mysql://localhost:3306/erp
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,8 +18,6 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 5000
-server:
-  port: 8081
 eureka:
   instance:
     hostname: localhost
