@@ -18,6 +18,11 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 5000
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   instance:
     hostname: localhost
@@ -28,7 +33,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
+        include: *
 swagger:
   enable: true
 
