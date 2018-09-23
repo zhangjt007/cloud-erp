@@ -14,5 +14,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>cloud-erp-product-service-api</name>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.solo.cloud.erp.public.common</groupId>
+            <artifactId>cloud-erp-public-common</artifactId>
+            <version>${public-version}</version>
+        </dependency>
+    </dependencies>
 </project>

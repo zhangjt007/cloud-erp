@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloud-erp-order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: cloud-erp-service-config
+      profile: dev
+server:
+  port: 8082

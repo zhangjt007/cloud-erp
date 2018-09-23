@@ -9,6 +9,8 @@
 ## cloud-erp-order
 > 订单模块
 
+地址：http://localhost:8082/
+
 ## cloud-erp-product
 > 商品模块
 

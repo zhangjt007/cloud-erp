@@ -14,6 +14,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cloud-erp-public-mogolog</module>
+        <module>cloud-erp-public-common</module>
     </modules>
 
     <name>cloud-erp-public</name>

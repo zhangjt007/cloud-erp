@@ -32,24 +32,24 @@ public class WebLogAspect {
         HttpServletRequest request = attributes.getRequest();
         startTime.set(System.currentTimeMillis());
         // 记录下请求内容
-        logger.info("URL : " + request.getRequestURL().toString());
-        logger.info("HTTP_METHOD : " + request.getMethod());
-        logger.info("IP : " + request.getRemoteAddr());
-        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
+        logger.info("[商品模块] URL : " + request.getRequestURL().toString());
+        logger.info("[商品模块] HTTP_METHOD : " + request.getMethod());
+        logger.info("[商品模块] IP : " + request.getRemoteAddr());
+        logger.info("[商品模块] CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        logger.info("[商品模块] ARGS : " + Arrays.toString(joinPoint.getArgs()));
     }
 
     @AfterReturning(returning = "ret", pointcut = "webLog()")
     public void doAfterReturning(Object ret) throws Throwable {
         // 处理完请求，返回内容
-        logger.info("RESPONSE : " + ret);
-        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
+        logger.info("[商品模块] RESPONSE : " + ret);
+        logger.info("[商品模块] SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
     }
 
     //后置异常通知
     @AfterThrowing("webLog()")
     public void throwss(JoinPoint jp) {
-        logger.error("方法异常时执行.....");
+        logger.error("[商品模块] 方法异常时执行.....");
     }
 
 }
